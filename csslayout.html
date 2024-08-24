@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Layout with Machine Learning Focus</title>
+    <style>
+  
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f7f9fc;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+        }
+
+        .header p {
+            font-size: 22px;
+            font-weight: 300;
+        }
+
+        .topnav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #6c63ff;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .topnav a {
+            flex: 1;
+            padding: 16px;
+            color: #f7f9fc;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .topnav a:hover {
+            background-color: #4e4c7e;
+            color: #ffffff;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .leftcolumn {
+            flex: 70%;
+            padding-right: 20px;
+        }
+
+        .rightcolumn {
+            flex: 30%;
+            background-color: #ffffff;
+            padding-left: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #4e4c7e;
+            font-weight: 600;
+        }
+
+        .card h5 {
+            font-size: 18px;
+            color: #999;
+            margin-bottom: 20px;
+        }
+
+        .card p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .fakeimg {
+            background-color: #6c63ff;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        @media screen and (max-width: 800px) {
+            .leftcolumn,
+            .rightcolumn {
+                flex: 100%;
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Machine Learning and Web Design</h1>
+        <p>Explore the intersection of Machine Learning and modern web design.</p>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Machine Learning</a>
+        <a href="#">Web Design</a>
+        <a href="#" style="float:right">Contact</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Introduction to Machine Learning</h2>
+                <h5>The Basics of ML, Aug 24, 2024</h5>
+                <div class="fakeimg">ML Example Image</div>
+                <p>Machine Learning (ML) is a subset of artificial intelligence (AI) that enables systems to learn and improve from experience without being explicitly programmed. It involves algorithms that can identify patterns in data and make decisions with minimal human intervention.</p>
+                <p>With the rise of big data, ML has become increasingly important in various fields, including finance, healthcare, and web development.</p>
+            </div>
+            <div class="card">
+                <h2>Responsive Web Design Techniques</h2>
+                <h5>Creating User-Centric Websites, Aug 24, 2024</h5>
+                <div class="fakeimg">Responsive Design Image</div>
+                <p>Responsive web design ensures that your website looks great on all devices, whether it's a desktop, tablet, or mobile phone. Techniques such as media queries, flexible grid layouts, and responsive images are crucial to achieving this.</p>
+                <p>Integrating ML into responsive design can enhance user experience by personalizing content and improving site performance based on user behavior analysis.</p>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height:100px;">Profile Image</div>
+                <p>I am a developer with a passion for Machine Learning and web design. I enjoy creating intelligent, user-friendly websites that provide personalized experiences.</p>
+            </div>
+            <div class="card">
+                <h3>Popular Topics</h3>
+                <div class="fakeimg">
+                    <p>Neural Networks</p>
+                </div>
+                <div class="fakeimg">
+                    <p>Data-Driven Design</p>
+                </div>
+                <div class="fakeimg">
+                    <p>AI in Web Development</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Stay updated with the latest in Machine Learning and web design. Follow me on social media for more insights and tutorials.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Connect with Me</h2>
+    </div>
+
+</body>
+
+</html>
